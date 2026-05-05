@@ -1,0 +1,89 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#E0F2FE"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0F172A" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2 2L10 6L2 10V2Z" fill="#0891B2"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1000" rx="48" fill="url(#bg)"/>
+  <circle cx="1240" cy="120" r="280" fill="#22D3EE" opacity="0.12"/>
+  <circle cx="250" cy="880" r="260" fill="#2563EB" opacity="0.10"/>
+
+  <text x="80" y="92" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="800" fill="#0F172A">Cloud Threat Detection &amp; Response Lab</text>
+  <text x="82" y="135" font-family="Inter, Arial, sans-serif" font-size="22" fill="#475569">AWS telemetry → SIEM detections → automated response → analyst evidence</text>
+
+  <!-- Attacker -->
+  <rect x="80" y="260" width="245" height="170" rx="28" fill="url(#card)" stroke="#CBD5E1" filter="url(#shadow)"/>
+  <text x="122" y="320" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#0F172A">Attack Simulation</text>
+  <text x="122" y="358" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">• Suspicious API calls</text>
+  <text x="122" y="384" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">• IAM misuse</text>
+  <text x="122" y="410" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">• S3 access anomaly</text>
+
+  <!-- AWS Account Boundary -->
+  <rect x="410" y="200" width="780" height="430" rx="36" fill="#FFFFFF" fill-opacity="0.56" stroke="#0891B2" stroke-width="3" stroke-dasharray="14 12"/>
+  <text x="440" y="245" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#0E7490">AWS Security Account / Lab Environment</text>
+
+  <!-- CloudTrail -->
+  <rect x="465" y="295" width="260" height="145" rx="24" fill="url(#card)" stroke="#CBD5E1" filter="url(#shadow)"/>
+  <text x="512" y="350" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0F172A">CloudTrail</text>
+  <text x="512" y="385" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">API activity logs</text>
+
+  <!-- GuardDuty -->
+  <rect x="850" y="295" width="260" height="145" rx="24" fill="url(#card)" stroke="#CBD5E1" filter="url(#shadow)"/>
+  <text x="893" y="350" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="800" fill="#0F172A">GuardDuty</text>
+  <text x="893" y="385" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Threat findings</text>
+
+  <!-- S3 Logs -->
+  <rect x="465" y="485" width="260" height="105" rx="24" fill="url(#card)" stroke="#CBD5E1" filter="url(#shadow)"/>
+  <text x="538" y="540" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0F172A">S3 Log Bucket</text>
+  <text x="515" y="568" font-family="Inter, Arial, sans-serif" font-size="15" fill="#475569">Centralized evidence</text>
+
+  <!-- EventBridge -->
+  <rect x="850" y="485" width="260" height="105" rx="24" fill="url(#card)" stroke="#CBD5E1" filter="url(#shadow)"/>
+  <text x="899" y="540" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800" fill="#0F172A">EventBridge</text>
+  <text x="900" y="568" font-family="Inter, Arial, sans-serif" font-size="15" fill="#475569">Routes findings</text>
+
+  <!-- SIEM -->
+  <rect x="1275" y="250" width="250" height="165" rx="28" fill="url(#card)" stroke="#CBD5E1" filter="url(#shadow)"/>
+  <text x="1338" y="306" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#0F172A">SIEM</text>
+  <text x="1325" y="344" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">ELK / Wazuh</text>
+  <text x="1325" y="372" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Detection rules</text>
+
+  <!-- Lambda -->
+  <rect x="1275" y="495" width="250" height="165" rx="28" fill="url(#card)" stroke="#CBD5E1" filter="url(#shadow)"/>
+  <text x="1332" y="552" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800" fill="#0F172A">Lambda</text>
+  <text x="1325" y="590" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Automated response</text>
+  <text x="1325" y="618" font-family="Inter, Arial, sans-serif" font-size="16" fill="#475569">Alert enrichment</text>
+
+  <!-- Analyst -->
+  <rect x="820" y="755" width="350" height="150" rx="30" fill="#0F172A" filter="url(#shadow)"/>
+  <text x="870" y="815" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">Analyst Workflow</text>
+  <text x="870" y="854" font-family="Inter, Arial, sans-serif" font-size="17" fill="#CBD5E1">Triage • Evidence • RCA • Remediation</text>
+
+  <!-- arrows -->
+  <line x1="325" y1="345" x2="450" y2="345" stroke="#0891B2" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="725" y1="365" x2="835" y2="365" stroke="#0891B2" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="595" y1="440" x2="595" y2="470" stroke="#0891B2" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="980" y1="440" x2="980" y2="470" stroke="#0891B2" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1110" y1="360" x2="1260" y2="330" stroke="#0891B2" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1110" y1="535" x2="1260" y2="565" stroke="#0891B2" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1400" y1="660" x2="1165" y2="775" stroke="#0891B2" stroke-width="5" marker-end="url(#arrow)"/>
+  <line x1="1400" y1="415" x2="1050" y2="755" stroke="#0891B2" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <!-- Bottom detections -->
+  <rect x="80" y="730" width="610" height="175" rx="30" fill="url(#card)" stroke="#CBD5E1" filter="url(#shadow)"/>
+  <text x="125" y="790" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800" fill="#0F172A">Detection Use Cases</text>
+  <text x="125" y="830" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">• Root account usage • MFA disabled • Public S3 exposure</text>
+  <text x="125" y="860" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">• Unusual region activity • GuardDuty high severity finding</text>
+</svg>
